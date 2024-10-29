@@ -1,0 +1,91 @@
+<SERVICES>
+    <SERVICE>
+        <SRVID>SRV-01</SRVID>
+        <SCATEGORY>Backpacking</SCATEGORY>
+        <SNAME>Weekend Backpacking Trip</SNAME>
+        <SDURATION>03 days</SDURATION>
+        <SCOST>$750.00</SCOST>
+        <SDEPART>Friday Noon - Returns Sunday</SDEPART>
+        <SDESC>Backpacking trip from Mapleton Depot to the Martins Gap via the Standing Stone Trail. Includes all meals.</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-02</SRVID>
+        <SCATEGORY>Backpacking</SCATEGORY>
+        <SNAME>Week Backpacking Trip</SNAME>
+        <SDURATION>07 days</SDURATION>
+        <SCOST>$1400.00</SCOST>
+        <SDEPART>Sunday - Returns Saturday</SDEPART>
+        <SDESC>5 day backpacking trip from Cowans Gap State Park to Greenwood Furnace State Park via the Standing Stone Trail. Includes all meals.</SDESC>
+    </SERVICE><SERVICE>
+        <SRVID>SRV-03</SRVID>
+        <SCATEGORY>Backpacking</SCATEGORY>
+        <SNAME>Backpacking Trek</SNAME>
+        <SDURATION>14 days</SDURATION>
+        <SCOST>$2800.00</SCOST>
+        <SDEPART>Sunday - Returns Saturday</SDEPART>
+        <SDESC>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD.</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-04</SRVID>
+        <SCATEGORY>Climbing</SCATEGORY>
+        <SNAME>Bouldering</SNAME>
+        <SDURATION>01 day</SDURATION>
+        <SCOST>$200.00</SCOST>
+        <SDEPART>1PM - 6PM</SDEPART>
+        <SDESC>Pulpit Rocks, Huntingdon 5 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-05</SRVID>
+        <SCATEGORY>Climbing</SCATEGORY>
+        <SNAME>Top-Roping Day</SNAME>
+        <SDURATION>01 day</SDURATION>
+        <SCOST>$400.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>8 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-06</SRVID>
+        <SCATEGORY>Climbing</SCATEGORY>
+        <SNAME>Top-Roping Belaying</SNAME>
+        <SDURATION>03 day</SDURATION>
+        <SCOST>$1200.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>24 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-07</SRVID>
+        <SCATEGORY>Climbing</SCATEGORY>
+        <SNAME>Rappelling - Self Rescue</SNAME>
+        <SDURATION>02 days</SDURATION>
+        <SCOST>$800.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>16 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-08</SRVID>
+        <SCATEGORY>Climbing</SCATEGORY>
+        <SNAME>Lead Climbing</SNAME>
+        <SDURATION>02 days</SDURATION>
+        <SCOST>$1200.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>16 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-09</SRVID>
+        <SCATEGORY>Land Nav</SCATEGORY>
+        <SNAME>Map - Compass</SNAME>
+        <SDURATION>01 day</SDURATION>
+        <SCOST>$400.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>8 hours</SDESC>
+    </SERVICE>
+    <SERVICE>
+        <SRVID>SRV-10</SRVID>
+        <SCATEGORY>Land Nav</SCATEGORY>
+        <SNAME>GPS</SNAME>
+        <SDURATION>01 day</SDURATION>
+        <SCOST>$400.00</SCOST>
+        <SDEPART>9AM - 5PM</SDEPART>
+        <SDESC>8 hours</SDESC>
+    </SERVICE>
+</SERVICES>
