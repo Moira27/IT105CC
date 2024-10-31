@@ -22,7 +22,7 @@ function myFuntion (xml) {
     var xmlDoc = xml.responseXML;
     var divcols='<div class="row"><div class"col-md-2"><b>Category</b></div><div class="row"><div class"col-md-2"><b>Trip Name</b></div><div class="row"><div class"col-md-2"><b>Duration</b></div><div class="row"><div class"col-md-2"><b>Cost</b></div><div class="row"><div class"col-md-2"><b>Departure</b></div><div class="row"><div class"col-md-2"><b>Description</b></div>';
 // -- console.log(divcols); 
-    var x = xmlDoc.getElementByTagName("SERVICE");
+    var x = xmlDoc.getElementsByTagName("SERVICE");
     for (i=0; i<x.length; i++) {
         divcols += '<div class="row"><div class="col-md-2">' +
             x[i].getElementsByTagName("SCATEGORY")[0].childNodes[0].nodeValue +
