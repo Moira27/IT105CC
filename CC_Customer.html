@@ -22,7 +22,13 @@
             background-color: #D9FFFF;
             font-size:14pt;
             color:#3b2415;
-            text-align: center;
+            text-align: left;
+            }
+        #bod2 {
+            background-color: #D9FFFF;
+            font-size:14pt;
+            color:#3b2415;
+            text-align: left;
             }
         </style>
         <script>
@@ -37,6 +43,31 @@
     </head>
     <body>
     <div id=myHeader>Customers</div>
+    
+    <div class="row">
+    <div class="col-sm-6">
+        <div id=bod class="card" style="width: 18rem;">
+        <h5 class="card-header">Hunter's Rocks Boudering Trip, Nov. 16th</h5>
+        <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Moira McAninch's Review</h5>
+            <p class="card-text">"It was an amazing experience!"</p>
+            <p class="card-text">On a breezy, and slightly chilly Saturday we took a half day trip out to Hunter's Rocks to work on some outdoor bouldering skills with a small group. One of the favorite climbs of the day was the Nose Picker a V3.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div  id=bod2 class="card" style="width: 18rem;">
+        <h5 class="card-header">Donation Rock Top Rope Belaying Course Sept. 11-13th</h5>
+        <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">John Doe's Review</h5>
+            <p class="card-text">"Damn, I learned so much!"</p>
+            <p class="card-text">It was a wonderfully sunny 3 days while we taught top rope belaying to a wonderful group. Much fun and learning was had.</p>
+            </div>
+        </div>
+    </div>
+    </div>
     <form id=bodform method="GET">
             <p>
                 <label for="name">Name:</label>
