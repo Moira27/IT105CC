@@ -37,7 +37,7 @@
             var mymail = frm.user_email.value;
             var mymsg = frm.user_message.value;
            
-            document.getElementById("formresults").innerHTML = "Name: " + myname + "  Email: " + mymail + "  Message: " + mymsg;
+            document.getElementById("formresults").innerHTML = "Thank you for your feedback. We will get back to you shortly at:  " + mymail;
         }
         </script>
     </head>
@@ -82,7 +82,7 @@
                 <textarea id="msg" name="user_message"></textarea>
             </p>
             <p>
-                <input type="button" name="coolbutton" value="ClickMe" onclick="testMe(this.form)">
+                <input type="button" name="coolbutton" value="Submit" onclick="testMe(this.form)">
             </p>
         </form>
         <div class="results" id="formresults"></div>
