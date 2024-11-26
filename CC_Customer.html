@@ -43,31 +43,60 @@
     </head>
     <body>
     <div id=myHeader>Customers</div>
-    
-    <div class="row">
-    <div class="col-sm-6">
-        <div id=bod class="card" style="width: 18rem;">
-        <h5 class="card-header">Hunter's Rocks Boudering Trip, Nov. 16th</h5>
-        <img src="images/Bouldering-GettyImages-1199646674.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Moira McAninch's Review</h5>
-            <p class="card-text">"It was an amazing experience!"</p>
-            <p class="card-text">On a breezy, and slightly chilly Saturday we took a half day trip out to Hunter's Rocks to work on some outdoor bouldering skills with a small group. One of the favorite climbs of the day was the Nose Picker a V3.</p>
+    <div class="container">
+        <div class="row">
+            <div id="recordset"></div>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div  id=bod2 class="card" style="width: 18rem;">
-        <h5 class="card-header">Donation Rock Top Rope Belaying Course Sept. 11-13th</h5>
-        <img src="images/rock-climbing-guide-1440x810.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">John Doe's Review</h5>
-            <p class="card-text">"Damn, I learned so much!"</p>
-            <p class="card-text">It was a wonderfully sunny 3 days while we taught top rope belaying to a wonderful group. Much fun and learning was had.</p>
+            <!--<div class="col-md-3">
+            Two
             </div>
+            <div class="col-md-3">
+            Three
+            </div>
+            <div class="col-md-3">
+            Four
+            </div> -->
         </div>
-    </div>
-    </div>
+<hr>
+<script>
+function fetchJSONData() {
+	fetch("./Customer.json").then((res) => {
+		if (!res.ok) {
+			throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+	})
+    .then((data) => {
+		rs =  '<div class="row">';
+/*
+		rs += '   <div class="col-md-2"><h4>Adventure Name</h4></div>';
+		rs += '   <div class="col-md-2"><h4>Date</h4></div>';
+		rs += '   <div class="col-md-2"><h4>Photo</h4></div>';
+        rs += '   <div class="col-md-2"><h4>Customer Name</h4></div>';
+        rs += '   <div class="col-md-2"><h4>Quote</h4></div>';
+        rs += '   <div class="col-md-2"><h4>Description</h4></div>';
+		rs += '</div>';
+*/
+		for(i=0;i<data.length;i++) {
+			rs += '   <div class="col-md-4">';
+            rs += '<div id=bod class="card" style="width: 18rem;">';
+            rs += '<h5 class="card-header">' + data[i].adventurename + ", " + data[i].adventuredate + '</h5>';
+			rs += '<img src="' + data[i].adventurephoto + '" class="card-img-top" alt="...">';
+            rs += data[i].customername + '<br>';
+            rs += data[i].customerquote + '<br>';
+            rs += data[i].descriptionfile + '</div></div>';
+
+		} 
+        rs += '</div>';
+		document.getElementById("recordset").innerHTML = rs;
+	})
+	.catch((error) =>
+		console.error("Unable to fetch data:", error));
+}
+fetchJSONData();
+
+</script>
+
     <form id=bodform method="GET">
             <p>
                 <label for="name">Name:</label>
