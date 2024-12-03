@@ -45,7 +45,7 @@
 <hr>
 <script>
 function fetchJSONData() {
-	fetch('http://158.101.118.50/data/gearlist.json').then((res) => {
+	 fetch('./gearlist.json').then((res) => {
 		if (!res.ok) {
 			throw new Error(`HTTP error! Status: ${res.status}`);
         }
