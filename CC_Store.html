@@ -53,15 +53,6 @@ function fetchJSONData() {
 	})
     .then((data) => {
 		rs =  '<div class="row">';
-/*
-		rs += '   <div class="col-md-2"><h4>Adventure Name</h4></div>';
-		rs += '   <div class="col-md-2"><h4>Date</h4></div>';
-		rs += '   <div class="col-md-2"><h4>Photo</h4></div>';
-        rs += '   <div class="col-md-2"><h4>Customer Name</h4></div>';
-        rs += '   <div class="col-md-2"><h4>Quote</h4></div>';
-        rs += '   <div class="col-md-2"><h4>Description</h4></div>';
-		rs += '</div>';
-*/
 		for(i=0;i<data.length;i++) {
 			rs += '   <div class="col-md-4">';
             rs += '<div id=bod class="card" style="width: 18rem;">';
